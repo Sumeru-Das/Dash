@@ -26,8 +26,8 @@ export default function RootLayout({
         variables: {
           colorText: "#000000",
           colorPrimary: "#000000",
-          colorBackground: "#008793",
-          colorInputBackground: "#FFFFFF",
+          colorBackground: "#D5CEA3",
+          colorInputBackground: "#E5E5CB",
           colorInputText: "#000000",
         },
       }}
