@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <section className="flex size-full flex-col gap-10 ">
       <h1 className="text-3xl font-bold">
-        <div className="h-[300px] w-full rounded-[20px] bg-dark-3 text-white bg-cover">
+        <div className="h-[300px] w-full rounded-[20px] bg-dark-3 text-[#043F2E] bg-cover">
           <div className="flex h-full flex-col justify-between max-md:px-5 max-md::py-5 lg:p-11">
             <h2 className="glassmorphism max-w-[270px] rounded py-2 text-center text-base font-semibold">
               Upcoming Meeting at: 12:30 PM
