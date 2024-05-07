@@ -64,18 +64,11 @@ const CallList = ({ type }: { type: "ended" | "upcoming" | "recordings" }) => {
   const noCallsMessage = getNoCallsMessage();
 
   return (
-    <div className="grid grid-cols-1 gap-5 xl:grid-cols-2">
+    <div className="grid grid-cols-1 gap-5 xl:grid-cols-2 rounded-lg">
       {calls && calls.length > 0 ? (
         calls.map((meeting: Call | CallRecording) => (
           <MeetingCard
             key={(meeting as Call).id}
-            // icon={
-            //   type === 'ended'
-            //     ? '/icons/previous.svg'
-            //     : type === 'upcoming'
-            //       ? '/icons/upcoming.svg'
-            //       : '/icons/recordings.svg'
-            // }
             title={
               (meeting as Call).state?.custom?.description ||
               (meeting as CallRecording).filename?.substring(0, 20) ||
@@ -93,7 +86,7 @@ const CallList = ({ type }: { type: "ended" | "upcoming" | "recordings" }) => {
                     (meeting as Call).id
                   }`
             }
-            buttonIcon1={type === "recordings" ? "/icons/play.svg" : undefined}
+            buttonIcon1={type === "recordings" ? "/icons/play.svg" : "/icons/play.svg"}
             buttonText={type === "recordings" ? "Play" : "Start"}
             handleClick={
               type === "recordings"
@@ -103,7 +96,7 @@ const CallList = ({ type }: { type: "ended" | "upcoming" | "recordings" }) => {
           />
         ))
       ) : (
-        <h1 className="text-2xl font-bold text-[#C8F169]">{noCallsMessage}</h1>
+        <h1 className="text-2xl font-bold text-color-1">{noCallsMessage}</h1>
       )}
     </div>
   );

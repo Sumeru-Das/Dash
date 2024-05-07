@@ -6,6 +6,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Font;
+}
+
+::selection {
+  color: #DD5746;
+}
+
+@font-face {
+  font-family: "Font";
+  src: url("/fonts/PPNeueMachina_Light.ttf") format("truetype");
 }
 
 /* ======== stream css overrides ======== */
@@ -43,12 +53,13 @@
 }
 
 .glassmorphism {
-  background: rgba(77, 121, 91, 0.25);
+  background: #ecf2ff;
+  border-radius: 10px;
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
 }
 .glassmorphism2 {
-  background: rgba(3, 53, 5, 0.25);
+  background: #ffffff;
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
 }
@@ -76,6 +87,19 @@
 }
 .cl-userButtonPopoverActionButton {
   color: white;
+}
+.cl-avatarBox {
+  height: 50px;
+  width: 50px;
+}
+.cl-internal-180wb59 {
+  display: none;
+}
+.cl-userButtonPopoverActionButton {
+  color: black;
+}
+.cl-internal-11ttlho {
+  display: none;
 }
 
 /* =============================== */

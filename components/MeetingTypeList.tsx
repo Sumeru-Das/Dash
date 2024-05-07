@@ -78,28 +78,28 @@ const MeetingTypeList = () => {
         title="New Meeting"
         description="Start an instant meeting"
         handleClick={() => setMeetingState("isInstantMeeting")}
-        className="bg-dark-3 text-dark-1"
+        className="bg-color-3 text-color-2"
       />
       <Card
         img="/icons/schedule.svg"
         title="Schedule Meeting"
         description="Plan your meeting"
         handleClick={() => setMeetingState("isScheduleMeeting")}
-        className="bg-dark-3 text-dark-1"
+        className="bg-color-3 text-color-2"
       />
       <Card
         img="/icons/recordings.svg"
         title="New Recordings"
         description="Check out your recordings"
         handleClick={() => router.push("/recordings")}
-        className="bg-dark-3 text-dark-1"
+        className="bg-color-3 text-color-2"
       />
       <Card
         img="/icons/join-meeting.svg"
         title="Join Meeting"
         description="Via invitation link"
         handleClick={() => setMeetingState("isJoiningMeeting")}
-        className="bg-dark-3 text-dark-1"
+        className="bg-color-3 text-color-2"
       />
 
       {!callDetails ? (
@@ -114,14 +114,14 @@ const MeetingTypeList = () => {
               Add a description
             </label>
             <Textarea
-              className="border-none bg-dark-3 focus-visible:ring-0 focus-visible:ring-offset-0"
+              className="border-none bg-color-3 text-color-2 focus-visible:ring-0 focus-visible:ring-offset-0"
               onChange={(e) =>
                 setValues({ ...values, description: e.target.value })
               }
             />
           </div>
           <div className="flex w-full flex-col gap-2.5">
-            <label className="text-base font-normal leading-[22.4px] text-sky-2">
+            <label className="text-base font-normal leading-[22.4px] ">
               Select Date and Time
             </label>
             <ReactDatePicker
@@ -132,7 +132,7 @@ const MeetingTypeList = () => {
               timeIntervals={15}
               timeCaption="time"
               dateFormat="MMMM d, yyyy h:mm aa"
-              className="w-full rounded bg-dark-3 p-2 focus:outline-none"
+              className="w-full rounded bg-color-3 p-2 focus:outline-none text-color-2"
             />
           </div>
         </MeetingModal>
@@ -172,7 +172,7 @@ const MeetingTypeList = () => {
         <Input
           placeholder="Meeting link"
           onChange={(e) => setValues({ ...values, link: e.target.value })}
-          className="border-none bg-dark-3 focus-visible:ring-0 focus-visible:ring-offset-0"
+          className="border-none bg-color-3 text-color-2 focus-visible:ring-0 focus-visible:ring-offset-0"
         />
       </MeetingModal>
     </section>

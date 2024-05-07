@@ -19,20 +19,11 @@ const config = {
     },
     extend: {
       colors: {
-        dark: {
-          1: "#043F2E",
-          2: "#043F2E",
-          3: "#C8F169",
-          4: "#1E2757",
-          5: "#2A6F2B",
-        },
-        green: {
-          1: "#2A6F2B",
-        },
-        sky: {
-          1: "#C9DDFF",
-          2: "#ECF0FF",
-          3: "#F5FCFF",
+        color: {
+          1: "#FFFFFF",
+          2: "#000000",
+          3: "#ECF2FF",
+          4: "#322C2B",
         },
       },
       keyframes: {

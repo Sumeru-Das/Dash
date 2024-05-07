@@ -1,14 +1,11 @@
 import { ReactNode } from "react";
 import type { Metadata } from "next";
 import { ClerkProvider } from "@clerk/nextjs";
-import { Inter } from "next/font/google";
 
 import "@stream-io/video-react-sdk/dist/css/styles.css";
 import "react-datepicker/dist/react-datepicker.css";
 import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Dash",
@@ -30,15 +27,15 @@ export default function RootLayout({
             logoImageUrl: "/icons/logo.svg",
           },
           variables: {
-            colorText: "#043F2E",
-            colorPrimary: "#043F2E",
-            colorBackground: "#C8F169",
-            colorInputBackground: "#C8F169",
-            colorInputText: "#043F2E",
+            colorText: "#000000",
+            colorPrimary: "#000000",
+            colorBackground: "#ffffff",
+            colorInputBackground: "#ECF2FF",
+            colorInputText: "#000000",
           },
         }}
       >
-        <body className={`${inter.className} bg-dark-2 text-[#043F2E]`}>
+        <body>
           <Toaster />
           {children}
         </body>

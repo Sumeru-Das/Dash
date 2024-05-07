@@ -5,16 +5,16 @@ import { SignedIn, UserButton } from "@clerk/nextjs";
 
 const Navbar = () => {
   return (
-    <nav className="flex-between fixed z-50 w-full bg-dark-1 px-6 py-4 lg:px-10">
-      <Link href="/" className="flex items-center gap-1">
+    <nav className="flex-between fixed z-50 w-full bg-color-2 px-6 py-4 lg:px-10 ">
+      <Link href="/" className="flex items-center gap-2 glassmorphism">
         <Image
           src="/icons/logo.svg"
-          width={32}
-          height={32}
+          width={49}
+          height={42}
           alt="yoom logo"
-          className="max-sm:size-10"
+          className="max-sm:size-10 pl-2 "
         />
-        <p className="text-[26px] font-extrabold text-[#C8F169] max-sm:hidden">
+        <p className="text-[26px] font-extrabold text-black max-sm:hidden pr-2 ">
           Dash
         </p>
       </Link>
@@ -22,7 +22,6 @@ const Navbar = () => {
         <SignedIn>
           <UserButton afterSignOutUrl="/sign-in" />
         </SignedIn>
-
         <MobileNav />
       </div>
     </nav>
