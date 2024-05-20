@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import { ReactNode } from "react";
 
 export const metadata: Metadata = {
-  title: "Dash",
+  title: "Dash -- Video Conferencing App",
   description: "Video calling App",
   icons: {
     icon: "/icons/logo.svg",

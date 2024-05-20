@@ -8,7 +8,7 @@ import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: "Dash",
+  title: "Dash -- Video Conferencing App",
   description: "Video calling App",
   icons: {
     icon: "/icons/logo.svg",

@@ -23,7 +23,7 @@ const Sidebar = () => {
               className={cn(
                 "flex gap-4 items-center py-4  rounded-lg justify-start",
                 {
-                  "underline decoration-4 underline-offset-4 border-[2px] pl-2 border-color-3": isActive,
+                  "underline decoration-4 underline-offset-4 border-[2px] pl-2 border-white": isActive,
                 }
               )}
             >

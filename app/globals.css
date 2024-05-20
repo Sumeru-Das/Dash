@@ -53,13 +53,13 @@
 }
 
 .glassmorphism {
-  background: #ecf2ff;
+  background: #76ABAE;
   border-radius: 10px;
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
 }
 .glassmorphism2 {
-  background: #ffffff;
+  background: #76ABAE;
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
 }
