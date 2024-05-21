@@ -10,7 +10,7 @@
 }
 
 ::selection {
-  color: #DD5746;
+  color: #dd5746;
 }
 
 @font-face {
@@ -53,13 +53,14 @@
 }
 
 .glassmorphism {
-  background: #76ABAE;
+  background: #76abae;
   border-radius: 10px;
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
 }
 .glassmorphism2 {
-  background: #76ABAE;
+  background: #76abae;
+  border-radius: 10px;
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
 }

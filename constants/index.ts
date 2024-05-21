@@ -34,3 +34,27 @@ export const sidebarLinks = [
 //   "/images/avatar-4.png",
 //   "/images/avatar-5.png",
 // ];
+
+export const techLinks = [
+  {
+    imgURL: "/icons/TypeScript.svg",
+    label: "TypeScript",
+  },
+
+  {
+    imgURL: "/icons/Next.js.svg",
+    label: "Next.js",
+  },
+  {
+    imgURL: "/icons/Tailwind CSS.svg",
+    label: "Tailwind CSS",
+  },
+  {
+    imgURL: "/icons/clerk.svg",
+    label: "Clerk",
+  },
+  {
+    imgURL: "/icons/stream.svg",
+    label: "Stream.io",
+  },
+];
