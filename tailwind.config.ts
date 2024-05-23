@@ -20,11 +20,11 @@ const config = {
     extend: {
       colors: {
         color: {
-          1: "#76ABAE",
+          1: "#FFFAE6",
           2: "#0C0C0C",
           3: "#31363F",
           4: "#322C2B",
-          5: "#76ABAE",
+          5: "#FFFAE6",
         },
       },
       keyframes: {
